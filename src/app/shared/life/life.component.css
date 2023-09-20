@@ -1,0 +1,85 @@
+.hori{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 150px;
+  }
+  
+  .ver{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  
+  .ver a{
+    margin-top:15px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .button1{
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    width: 270px;
+    height: 225px;
+    border-radius: 70px;
+    border-color: rgb(255, 255, 255);
+    background-image: url(/assets/images/others/my_web/android.jpg);
+    transition: 0.5s;
+
+  }
+  
+  .button1:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    border-color: rgb(255, 255, 255);
+  }
+  
+  .button2{
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    width: 270px;
+    height: 225px;
+    border-radius: 70px;
+    border-color: rgb(231, 231, 231);
+    background-image: url(/assets/images/others/my_web/popping.png);
+    transition: 0.5s;
+
+  }
+  
+  .button2:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  .button3{
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    width: 270px;
+    height: 225px;
+    border-radius: 70px;
+    border-color: rgba(96, 197, 150, 0.997);
+    background-image: url(/assets/images/others/my_web/chill.jpg);
+    transition: 0.5s;
+
+  }
+  
+  .button3:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  @media screen and (max-width: 1023px) {
+  
+    .choice-item {
+      width: 100%;
+    }
+  
+  }
+  

@@ -1,0 +1,96 @@
+<header>
+
+  <!-- Logo 區域開始 -->
+  <a [routerLink]="[path.home]" class="desktop">
+    <img src="assets/images/logo/dog_sleep.png" alt="Sweetaste 的 Logo">
+  </a>
+
+  <!-- <a [routerLink]="[path.home]" class="mobile">
+    <img src="assets/images/logo/dog_sleep.png" alt="Sweetaste 的 Logo">
+  </a> -->
+  <!-- Logo 區域結束 -->
+
+  <!-- 選單區域開始 -->
+  <nav class="desktop" >
+    <ul>
+      <li><a [routerLink]="[path.home]">首頁</a></li>
+      <li><a [routerLink]="[path.files]">檔誌</a></li>
+      <li><a [routerLink]="[path.catog]">分類</a></li>
+      <li><a [routerLink]="[path.tags]">標籤</a></li>
+      <li><a [routerLink]="[path.about]">關於</a></li>
+      <li><a [routerLink]="[path.find]">搜尋</a></li>
+    </ul>
+  </nav>
+
+  <nav class="mobile">
+    <i class="material-icons">menu</i>
+    <ul>
+      <li><a [routerLink]="[path.home]">首頁</a></li>
+      <li><a [routerLink]="[path.files]">檔誌</a></li>
+      <li><a [routerLink]="[path.catog]">分類</a></li>
+      <li><a [routerLink]="[path.tags]">標籤</a></li>
+      <li><a [routerLink]="[path.about]">關於</a></li>
+      <li><a [routerLink]="[path.find]">搜尋</a></li>
+    </ul>
+  </nav>
+  <!--選單區域結束 -->
+
+  <!-- 購物車icon區域開始 -->
+  <!-- <a [routerLink]="[path.cart]" class="cart">
+    <i class="material-icons">shopping_cart</i>
+  </a> -->
+  <!-- 購物車icon區域結束 -->
+</header>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <!-- 訂閱區域開始 -->
+  <div class="callme">
+    <div><h1>如有問題 可以透過信箱email我</h1></div>
+    <div class="mail_img">
+      <div><img src="/assets/images/others/my_web/email.png" alt="email"></div>
+      <div class="mail">
+        <h2>歡迎來信:</h2>
+        <h2>ian52759@gmail.com</h2>
+      </div>
+    </div>
+  </div>
+  <!-- 訂閱區域結束 -->
+
+  <div class="contact-info">
+    <div class="intro">
+      <img src="/assets/images/logo/dog_sleep.png" alt="email">
+      <p>此網站目的為提供題目解題思想和程式碼解答，順便紀錄大學生活，</p><br>
+      <p>另外也順便展示期間所做project樣貌，煩請各位多加指點</p>
+    </div>
+    <div class="circle">
+      <a href="https://www.facebook.com/profile.php?id=100015369339061">
+        <img src="assets/images/icon/fbi.png" alt="連結到官方 Facebook 帳號的icon">
+      </a>
+      <a href="">
+        <img src="assets/images/icon/ic-google(2).svg" alt="連結到官方 google 帳號的icon">
+      </a>
+      <a href="">
+        <img src="assets/images/icon/line.png" alt="連結到官方 line 帳號的icon">
+      </a><br>
+      <a href="https://twitter.com/liyiche36486829">
+        <img src="assets/images/icon/twi.png" alt="連結到官方 twitter 帳號的icon">
+      </a>
+      <a href="https://www.instagram.com/hakaman_joymua/">
+        <img src="assets/images/icon/Insta_log.png" alt="連結到官方 instagram 帳號的icon">
+      </a>
+      <a href="https://github.com/Ianana1111">
+        <img src="assets/images/icon/github.png" alt="連結到官方 github 帳號的icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    &copy; Siesta. All Rights Reserved.
+  </div>
+
+</footer>
+
+
+

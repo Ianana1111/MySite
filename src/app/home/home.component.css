@@ -1,0 +1,374 @@
+/* Common */
+
+.mobile {
+  display: none;
+}
+
+h1{
+  font-weight: bold;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  /* background-image: ("/assets/images/others/my_web/nycu2照片.jpg"); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article img{
+  width:100%;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+article img:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.342);
+}
+
+.space{
+  padding-bottom: 50px;
+  text-align:center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* slider */
+
+
+article > section {
+  position: relative;
+}
+
+
+/* 中間區域*/
+
+article .first{
+  margin-top: 30px;
+  margin-bottom: 150px;
+  padding: 0 70px;
+  background-color: #ffffff;
+}
+
+article .first .description{
+  text-align: center;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+article .second{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1rem;
+  height: 350px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  background-color: #f2f2f2a4;
+}
+
+p+p{
+  margin-top: 10px; 
+}
+
+article .second .img {
+  background-size: cover;
+  background-position: center center;
+  margin-top: 40px;
+  margin-right: 100px;
+  margin-left: 50px;
+  width: 530px;
+  height: 220px;
+  background-image: url(/assets/images/others/my_web/code.png);
+}
+
+article .second .description{
+  height: 280px;
+  margin: 0px -42px;
+  padding: 20px 10px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  /* word-break:break-all; */
+}
+
+article .third{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+  height: 300px;
+  padding: 20px 0px;
+  margin-bottom: 60px;
+  background-color: #ffffff;
+}
+
+article .third .img {
+  background-size: cover;
+  background-position: center center;
+  width: 300px;
+  height: 300px;
+  left: 50px;
+  background-image: url(/assets/images/others/my_web/happyLife.jpg);
+}
+
+article .third .description{
+  height: 280px;
+  margin-right: 150px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  /* word-break:break-all; */
+}
+
+
+article section div h1{
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+article section div h2{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+article section div h1 .underline{
+  font-size: 250%;
+  box-shadow: 0 1px;
+  padding-bottom:5px;
+}
+
+article section div h2 .underline{
+  font-size: 180%;
+  box-shadow: 0 1px;
+  padding-bottom:5px;
+}
+
+article section div p{
+  font-size: 125%;
+}
+
+.hr-edge-weak {
+  border: 0;
+  padding-top: 4px;
+  background: linear-gradient(to right, transparent, #d0d0d5, transparent);
+}
+
+/* 中間區域*/
+
+/*各種連結區域*/
+
+.note{
+  margin: 50px auto;
+  width: 150px; 
+  padding-top: 30px; 
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.note p{
+  text-align: center;
+  font-weight: bold;
+}
+
+article .today-choice {
+  margin-bottom: 60px;
+  /* height: 250px; */
+}
+
+
+/*各種連結區域*/
+
+/* 低於 1024 之螢幕設定 */
+
+@media screen and (max-width: 1023px) {
+
+  /* Main Banner */
+
+  /* 為什麼XXXX甜點區域共同設定 */
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  header {
+    text-align: center;
+    line-height: 84px;
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  header img {
+    height: 18px;
+    vertical-align: middle;
+  }
+
+  header nav {
+    cursor: pointer;
+    width: 84px;
+    height: 84px;
+    text-align: center;
+    left: 0px;
+  }
+
+  header nav ul {
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    display: none;
+  }
+
+  header nav:active ul,
+  header nav:hover ul {
+    display: block;
+  }
+
+  header nav li {
+    width: 100vw;
+    background-color: rgba(255, 255, 255, .8);
+  }
+
+  header nav li:hover,
+  header nav li:active {
+    background-color: rgba(255, 225, 128, .8);
+  }
+
+  header nav li a {
+    width: 100%;
+  }
+
+  article .why {
+    padding: 0px;
+    padding-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  article .why .img {
+    position: static;
+    margin: 0px auto;
+  }
+
+  article .why > .img:first-child {
+    width: 196px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+
+  article .why > .img:nth-child(2) {
+    width: 100%;
+    height: 250px;
+  }
+
+  article .why .description {
+    padding: 30px;
+    margin: 0px;
+    height: auto;
+  }
+
+  article .why .description > p {
+    writing-mode: initial;
+    float: none;
+  }
+
+  /* 為什麼選擇了做甜點 */
+
+  article .why-choose > .img:first-child {
+    background-image: url(/assets/images/logo/sm-為什麼選擇了做甜點.svg);
+  }
+
+  article .why-choose .description > p:first-child {
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  /* 為什麼一定要吃甜點 */
+
+  article .why-eat > .img:first-child {
+    background-image: url(/assets/images/logo/sm-為什麼一定要吃甜點.svg);
+  }
+
+  article .why-eat .description > p:nth-child(2) {
+    margin-bottom: 40px;
+  }
+
+  /* 想吃甜點是不需要理由的 */
+
+  article .no-why {
+    margin: 30px 0px;
+  }
+
+  article .no-why img.mobile {
+    display: inline-block;
+    width: 226px;
+    height: 60px;
+  }
+
+  /* 本日精選 */
+
+  article .today-choice {
+    margin-bottom: 30px;
+    padding: 0px 30px;
+  }
+}

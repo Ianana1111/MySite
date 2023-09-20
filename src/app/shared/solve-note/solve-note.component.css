@@ -1,0 +1,86 @@
+.hori{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .ver{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  
+  .ver a{
+    margin-top:15px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .button1 img{
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    width: 270px;
+    height: 225px;
+    border-radius: 70px;
+    border-color: red;
+    /* background-image: url(/assets/images/others/my_web/uva.png); */
+    transition: 0.5s;
+
+  }
+  
+  .button1:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  .button2 img{
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    width: 270px;
+    height: 225px;
+    
+    border-radius: 70px;
+    border-color: rgba(124, 124, 124, 0.826);
+    /* background-image: url(/assets/images/others/my_web/cf.png); */
+    transition: 0.5s;
+  }
+
+  .button2{
+    border-width: 2px;
+  }
+  
+  .button2:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  .button3 img{
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    width: 270px;
+    height: 225px;
+    border-radius: 70px;
+    border-color: rgba(235, 235, 235, 0.997);
+    /* background-image: url(/assets/images/others/my_web/leetcode.jpg); */
+    transition: 0.5s;
+  }
+  
+  .button3:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  @media screen and (max-width: 1023px) {
+  
+    .choice-item {
+      width: 100%;
+    }
+  
+  }
+  
